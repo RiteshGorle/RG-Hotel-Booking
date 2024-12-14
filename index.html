@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hotel.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background-color: #ff7f50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff4500;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .feature {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .feature h3 {
+            margin: 1rem 0;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .feature p {
+            padding: 0 1rem 1rem;
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+        }
+
+        .reviews {
+            background: linear-gradient(90deg, #007bff, #4a90e2);
+            color: #fff;
+            padding: 3rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+        }
+
+        .reviews blockquote {
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+
+        .reviews cite {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Luxury Stay</h1>
+        <p>Your perfect getaway awaits</p>
+        <a href="#rooms" class="btn">Book Now</a>
+    </header>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="room1.jfif" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>Experience luxury with a stunning view and premium amenities.</p>
+            </div>
+            <div class="feature">
+                <img src="room2.jpg" alt="Suite Room">
+                <h3>Suite Room</h3>
+                <p>Enjoy spacious suites perfect for family and business travelers.</p>
+            </div>
+            <div class="feature">
+                <img src="room3.jfif" alt="Economy Room">
+                <h3>Economy Room</h3>
+                <p>Comfortable and affordable rooms for budget-conscious guests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dining">
+        <h2>Dining</h2>
+        <p style="text-align:center; max-width: 800px; margin: 0 auto;">
+            Savor world-class cuisines at our fine dining restaurant. Indulge in delicious meals prepared by our expert chefs, and enjoy a variety of international dishes in a sophisticated ambiance.
+        </p>
+    </section>
+
+    <section id="reviews">
+        <div class="reviews">
+            <h2>What Our Guests Say</h2>
+            <blockquote>
+                "Amazing experience! The rooms were spotless, and the service was outstanding."
+            </blockquote>
+            <cite>- Ritesh Gorle</cite>
+
+            <blockquote>
+                "Best vacation ever! Loved the dining options and cozy atmosphere."
+            </blockquote>
+            <cite>- Rohit Sharma</cite>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luxury Stay. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
